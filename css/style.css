@@ -39,7 +39,28 @@ h3 {
   margin-top: 40px;
   text-transform: capitalize;
 }
-
+.weather-link,
+.poem-link {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+  margin-top: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid rgb(116, 90, 141);
+  border-radius: 10px;
+  background-color: rgb(183, 141, 222);
+  color: #200439;
+}
+.weather-link:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.poem-link:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
 .contact {
   border: 1px solid rgb(116, 90, 141);
   padding: 20px;
@@ -47,13 +68,14 @@ h3 {
   box-shadow: var(--shadow);
   border-radius: 4px;
   margin: 20px;
-
-  .contact-link {
-    color: rgb(208, 201, 205);
-    text-decoration: none;
-    font-size: 15px;
-  }
 }
+
+.contact-link {
+  color: rgb(208, 201, 205);
+  text-decoration: none;
+  font-size: 15px;
+}
+
 .about {
   border: 1px solid rgb(208, 201, 205);
   padding: 20px;
@@ -108,4 +130,8 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 900px);
+@media (min-width: 768px) {
+  .resize {
+    max-width: max-content;
+  }
+}
